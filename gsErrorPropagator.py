@@ -26,7 +26,7 @@ from string import ascii_uppercase
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets'
 CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'CalcUncert'
-SPREADSHEET_ID = '16c8-XUZ_VDZTfDZUPebb0AHK67H2TSEU00f9-Tzg5to'
+SPREADSHEET_ID = '14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY'
 
 def get_credentials():
 	"""Gets valid user credentials from storage.
