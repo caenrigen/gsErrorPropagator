@@ -3,17 +3,18 @@
 from __future__ import print_function
 import httplib2
 import os
+import sys
 
 from apiclient import discovery
 from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
 
-try:
-	import argparse
-	flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
-except ImportError:
-	flags = None
+# try:
+# 	import argparse
+# 	flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
+# except ImportError:
+# 	flags = None
 
 from uncertainties import ufloat
 from uncertainties.umath import *
@@ -26,7 +27,7 @@ from string import ascii_uppercase
 SCOPES = 'https://www.googleapis.com/auth/spreadsheets'
 CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'CalcUncert'
-SPREADSHEET_ID = '14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY'
+# SPREADSHEET_ID = '14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY'
 
 def get_credentials():
 	"""Gets valid user credentials from storage.
@@ -49,10 +50,10 @@ def get_credentials():
 	if not credentials or credentials.invalid:
 		flow = client.flow_from_clientsecrets(CLIENT_SECRET_FILE, SCOPES)
 		flow.user_agent = APPLICATION_NAME
-		if flags:
-			credentials = tools.run_flow(flow, store, flags)
-		else: # Needed only for compatibility with Python 2.6
-			credentials = tools.run(flow, store)
+		# if flags:
+		# 	credentials = tools.run_flow(flow, store, flags)
+		# else: # Needed only for compatibility with Python 2.6
+		# 	credentials = tools.run(flow, store)
 		print('Storing credentials to ' + credential_path)
 	return credentials
 
@@ -176,15 +177,17 @@ def colToAlpha(column):
 	return ''.join(c)
 
 def main():
-
 	credentials = get_credentials()
 	http = credentials.authorize(httplib2.Http())
 	discoveryUrl = ('https://sheets.googleapis.com/$discovery/rest?'
 					'version=v4')
 	service = discovery.build('sheets', 'v4', http=http,
 							  discoveryServiceUrl=discoveryUrl)
-
-	spreadsheetId = SPREADSHEET_ID
+	if len(sys.argv) != 2 :
+		print ("Please run the program followed by the spreadsheet ID")
+		return
+	else:
+		spreadsheetId = sys.argv[1]
 	sheets = service.spreadsheets().get(
 		spreadsheetId=spreadsheetId).execute()['sheets']
 	rangeNames = []
