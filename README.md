@@ -33,9 +33,9 @@ Before you start, you should be advised that your decimal character should be a 
 
 2. Select the cell in which you want the error to be calculated. Call the function (=UNC()) . Here's the order of the arguments:
 ```
-(Result Value cell, "insert theorical model between inverted commas. ex: x+y","insert variable 1 between inverted commas. ex: x", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: y", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error).
+(Result Value cell, "insert equation between inverted commas. ex: x+y","insert variable 1 between inverted commas. ex: x", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: y", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error).
 ```
-In the type of error section, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Examples:
+In the 'type of error' argument, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Examples:
 ```
 =UNC(5.04,"a/b","a",D3,E3,"b",B3,C3,"me")
 ```
