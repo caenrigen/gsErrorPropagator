@@ -31,10 +31,11 @@ Before you start, you should be advised that your decimal character should be a 
 ```
 (Result Value cell, "insert theorical model between commas. ex: x+y","insert variable 1 between inverted commas. ex: x", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: y", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error).
 ```
-In the type of error section, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Example:
+In the type of error section, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Examples:
 ```
 =UNC(0.132465277942897,"real/ccd","real",D5,E5,"ccd",B5,C5,"s")
 ```
+![Alt text](/Images "example")
 3. Open the terminal and run gsErrorPropagator.py followed by the Spreadsheet ID. Example:
 ```
 ./gsErrorPropagator.py 14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY
