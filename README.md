@@ -40,4 +40,4 @@ In the type of error section, type "n" for number value, "s" for standard deviat
 ```
 ./gsErrorPropagator.py 14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY
 ```
-4. You should now have your desired error value in the designated cell.
+4. You should now have your desired error value in the designated cell. The first argument in the UNC function will be changed after this.
