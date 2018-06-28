@@ -35,7 +35,7 @@ In the type of error section, type "n" for number value, "s" for standard deviat
 ```
 =UNC(0.132465277942897,"real/ccd","real",D5,E5,"ccd",B5,C5,"s")
 ```
-![Screenshot](Images/example.png)
+![Screenshot](Images/example1.png)
 3. Open the terminal and run gsErrorPropagator.py followed by the Spreadsheet ID. Example:
 ```
 ./gsErrorPropagator.py 14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY
