@@ -1,5 +1,5 @@
 # gsErrorPropagator
-This is an uncertainty calculator add-on for Google Spreadsheets which allows the user to retrieve the number value, standard deviation and maximum error (error propagation with the sum partial derivatives associated with each variable times the error associated with that variable) associated with measurements that follow a known model. Unleash the power of uncertainties in Google Spreadsheets.
+This is an uncertainty calculator add-on for Google Spreadsheets which allows the user to retrieve the number value, standard deviation and maximum error (error propagation with the sum of partial derivatives associated with each variable times the error associated with that variable) associated with measurements that follow a known model. Unleash the power of uncertainties in Google Spreadsheets.
 
 ## Instalation
 1. First, you will need to install python3 and pip3 in your OS according to the Python documentation that you can find in the official website.
