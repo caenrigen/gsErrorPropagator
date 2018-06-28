@@ -1,10 +1,10 @@
 # gsErrorPropagator
-This is an uncertainty calculator add-on for Google Spreadsheets which allows the user to retrieve the number value, standard deviation and maximum error (error propagation with the sum of partial derivatives associated with each variable times the error associated with that variable) associated with measurements that follow a known model. This script propagtes all the uncertainties in the correct order, so you can have UNC function cells that depend on other UNC function cells without malfunction. Unleash the power of uncertainties in Google Spreadsheets.
+This is an uncertainty calculator add-on for Google Spreadsheets which allows the user to retrieve the number value, standard deviation and maximum error associated with measurements that follow a known model. This script propagtes all the uncertainties in the correct order, so you can have UNC function cells that depend on other UNC function cells without malfunction. Unleash the power of uncertainties in Google Spreadsheets.
 
 ## Type of Errors
 1. 'n' (Number Value) - This option allows the user to use the values of the variables and evaluate the equation at those values. You can use this as a confirmation of the value you got from the equation/result.
-2. 's' (Standard Deviation) - 
-3. 'me' (Maximum Error) - 
+2. 's' (Standard Deviation) - For statistical variables.
+3. 'me' (Maximum Error) - Error propagation with the sum of partial derivatives associated with each variable times the error associated with that variable).
 
 ## Instalation
 1. First, you will need to install python3 and pip3 in your OS according to the Python documentation that you can find in the official website.
