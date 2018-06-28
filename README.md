@@ -27,6 +27,9 @@ https://chrome.google.com/webstore/detail/unc/bppaocmhleknjbchhmpbfoeifgbplpcn?u
 Before you start, you should be advised that your decimal character should be a point ("."). You can set this definition by changing the time-zone of your spreadsheet: Spreadsheet settings > General > Time-Zone > (GMT + 00:00) London. There should be no "ERROR!" cells in the spreadsheet either.
 1. Open your spreadsheet and go to Add Ons > UNC > Show Spreadsheet ID. Copy that code to your clipboard.
 
+![Screenshot](Images/id.png)
+![Screenshot](Images/idcall.png)
+
 2. Select the cell in which you want the error to be calculated. Call the function (=UNC()) . Here's the order of the arguments:
 ```
 (Result Value cell, "insert theorical model between commas. ex: x+y","insert variable 1 between inverted commas. ex: x", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: y", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error).
