@@ -50,3 +50,9 @@ In the 'type of error' argument, type "n" for number value, "s" for standard dev
 ./gsErrorPropagator.py 14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY
 ```
 4. You should now have your desired error value in the designated cell. The first argument in the UNC function will be changed after this.
+
+## Credits and Further Reading
+1. 
+2. https://pythonhosted.org/uncertainties/
+3. https://developers.google.com/api-client-library/python/guide/aaa_oauth
+
