@@ -1,6 +1,11 @@
 # gsErrorPropagator
 This is an uncertainty calculator add-on for Google Spreadsheets which allows the user to retrieve the number value, standard deviation and maximum error (error propagation with the sum of partial derivatives associated with each variable times the error associated with that variable) associated with measurements that follow a known model. This script propagtes all the uncertainties in the correct order, so you can have UNC function cells that depend on other UNC function cells without malfunction. Unleash the power of uncertainties in Google Spreadsheets.
 
+## Type of Errors
+1. 'n' (Number Value) - This option allows the user to use the values of the variables and evaluate the equation at those values. You can use this as a confirmation of the value you got from the equation/result.
+2. 's' (Standard Deviation) - 
+3. 'me' (Maximum Error) - 
+
 ## Instalation
 1. First, you will need to install python3 and pip3 in your OS according to the Python documentation that you can find in the official website.
 2. Now you must install some packages. Let's start with the "oauth2client" one. Just open your terminal, type and run the following line:
@@ -35,7 +40,7 @@ Before you start, you should be advised that your decimal character should be a 
 ```
 (Result Value cell, "insert equation between inverted commas. ex: x+y","insert variable 1 between inverted commas. ex: x", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: y", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error).
 ```
-In the 'type of error' argument, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Examples:
+In the 'type of error' argument, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Also, don't forget to write the equation in Python math notation. Examples:
 ```
 =UNC(5.04,"a/b","a",D3,E3,"b",B3,C3,"me")
 ```
