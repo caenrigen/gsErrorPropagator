@@ -31,5 +31,11 @@ Before you start, you should be advised that your decimal character should be a 
 ./gsErrorPropagator.py 14mTO5A3tgtcD1HkgItetVGgwcczSAtGUIPGuaK7GdBY
 ```
 3. Select the cell in which you want the error to be calculated. Call the function (=UNC()) . Here's the order of the arguments:
-(Result Value cell, "insert theorical model between commas. ex, for frequency: v/d","insert variable 1 between inverted commas. ex: v", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: d", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error). In the type of error section, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas.
+```
+(Result Value cell, "insert theorical model between commas. ex, for frequency: v/d","insert variable 1 between inverted commas. ex: v", variable 1 cell, variable 1 error cell, "insert variable 2 between inverted commas. ex: d", variable 2 cell, veriable 2 error cell, (..., repeat for the number of variables you have), type of error).
+```
+In the type of error section, type "n" for number value, "s" for standard deviation and "me" for maximum error, always between inverted commas. Example:
+```
+=UNC(0.132465277942897,"real/ccd","real",D5,E5,"ccd",B5,C5,"s")
+```
 4. You should now have your desired error value in the designated cell.
